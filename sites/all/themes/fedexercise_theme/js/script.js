@@ -15,10 +15,44 @@
   'use strict';
 
   // To understand behaviors, see https://drupal.org/node/756722#behaviors
-  Drupal.behaviors.my_custom_behavior = {
+  Drupal.behaviors.list_sort = {
     attach: function (context, settings) {
 
-      // Place your code here.
+      var options = {
+        valueNames: [ 'photo-taken', 'imagelink' ]
+      };
+
+      var userList = new List('users', options);
+
+    }
+  };
+    
+  Drupal.behaviors.pagination = {
+    attach: function (context, settings) {
+
+      var items = $(".list .flickr-wrap");
+
+    var numItems = items.length;
+    var perPage = 10;
+
+    // only show the first 5 (or "first per_page") items initially
+    items.slice(perPage).hide();
+
+    // now setup your pagination
+    // you need that .pagination-page div before/after your table
+    $(".pagination-area").pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        cssStyle: "light-theme",
+        onPageClick: function(pageNumber) { // this is where the magic happens
+            // someone changed page, lets hide/show trs appropriately
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+
+            items.hide() // first hide everything, then show for the new page
+                 .slice(showFrom, showTo).show();
+        }
+    });
 
     }
   };

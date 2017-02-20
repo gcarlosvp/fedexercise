@@ -1,0 +1,167 @@
+/* Page Left Sidebar */
+.block-block.contextual-links-region.first{
+    padding-top: 60px;   
+}
+
+.block-block.first p img{
+    padding: 60px;   
+}
+
+/* Main Page Styles */
+.page-node .layout-center{
+    padding:0;
+    max-width: 100%;
+}
+
+.page-node .layout-center .header{
+    padding:10px;
+    background-color: #273952;
+}
+
+.btn-default.menu-trigger-unclicked{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    margin-top: 9px;   
+}
+
+.header__name-and-slogan{
+    width: 70%;   
+}
+
+.header__region.region.region-header{
+    width: 30%;
+    float: left;
+    clear:none;
+}
+
+.block-menu h2.block__title{
+    display: none;   
+}
+
+.block-menu .menu{
+    height: 30px;
+    margin-bottom: 0;   
+    }
+
+.menu .menu__item.is-leaf{
+    list-style: none;
+    padding: 5px 30px;
+    float: left;
+}
+
+.menu .menu__item.is-leaf a{
+    color:#fff;
+    padding:0;
+}
+
+.btn-default.menu-trigger-clicked{
+    color: #ccc;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    margin-top: 9px;   
+}
+
+.header__name-and-slogan h1.header__site-name{
+    font-size: 27px;
+    font-weight: 200;
+}
+
+.page-node .layout-center .header .header__site-link{
+    color: #ffffff;
+    padding: 10px;
+}
+
+.page-node .layout-center .layout-3col.layout-swap{
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.page-node a{
+    color:#155f9e;   
+}
+
+.layout-3col.layout-swap h1{
+    font-size: 45px;
+    border-bottom: 2px solid #000;
+    color:#757373;
+}
+
+.flickr-photoset h2.flickr-album-heading{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 32px;
+    color:#757373;
+}
+
+.footer .block-block{
+    padding:10px;
+    background-color: #273952;
+}
+
+.footer .block-block p{
+    color:#fff;
+    margin-bottom: 0;
+}
+
+/*  Flickr List Styles  */
+.flickr-photoset .flickr-album.row .flickr-wrap{
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.image-link h3{
+    font-size: 22px;
+    font-weight: normal;   
+}
+
+.flickr-image .flickr-img-wrap .flickr-photo-img{
+        margin: 0 3px 0 0;
+    -webkit-box-shadow: 1px 1px 6px 0px /*variable:flickrstyle_shadow_color*/#a5a5a5/*variable*/;
+    -moz-box-shadow: 1px 1px 6px 0px /*variable:flickrstyle_shadow_color*/#a5a5a5/*variable*/;
+    box-shadow: 1px 1px 6px 0px /*variable:flickrstyle_shadow_color*/#a5a5a5/*variable*/;
+}
+
+.flickr-credit .image-link a{
+    color: #08527f;    
+}
+
+.flickr-metadata .phototaken a{
+    color: #ec1c3d;
+}
+
+.layout-3col__right-content {
+    /* border-left: 1px solid #f5f5f5; */
+}
+
+.pagination-area.simple-pagination{
+    height: 30px;
+    margin:20px 10px;
+}
+
+@media only screen and (max-width: 737px) {
+    .block-menu h2.block__title{
+    display: block;   
+    }
+    
+    .header__name-and-slogan{
+    width: 100%;   
+}
+    
+    .menu .menu__item.is-leaf{
+    list-style: none;
+    padding:10px 0;
+    clear: both;
+    }
+
+    .menu .menu__item.is-leaf a{
+    color:#fff;
+    padding:5px 0;
+    }
+    
+    .header__region.region.region-header{
+    width: 100%;
+    float: none;  
+}
+}
